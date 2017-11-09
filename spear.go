@@ -27,9 +27,9 @@ func init() {
 
 func index(w http.ResponseWriter, r *http.Request) {
 	var games gameFiles
-	games.Windows = "https://drive.google.com/open?id=0B4GT2dEsAtCwYURWdGp4dU9SMG8"
-	games.Linux = "https://drive.google.com/open?id=0B4GT2dEsAtCwQkJVVmsxX1JtX1U"
-	games.MacOS = "https://drive.google.com/open?id=0B4GT2dEsAtCwM29PTzdIRHhNaUU"
+	games.Windows = "https://drive.google.com/open?id=1XqZt6T4thsDgZ0Pil7gfMem0iYYHby_4"
+	games.Linux = "https://drive.google.com/open?id=1atPZq4m7w8jfOK15zUxG816AKa50mmdB"
+	games.MacOS = "https://drive.google.com/open?id=1i93p55Dh_fRTBeUf-IQzJwzR-ZjTWUGu"
 	err := tpl.ExecuteTemplate(w, "index.html", games)
 	if err != nil {
 		log.Println(err)

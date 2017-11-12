@@ -424,7 +424,9 @@ footer .footer-bottom p, footer .footer-bottom p a {
  
 .clear {
 	clear: both;
+	font-weight: bold;
 	display: block;
+	color: white;
 }
 
 .hide {

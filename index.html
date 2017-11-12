@@ -1,47 +1,62 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
-    <head>
-        <title> Spearship Strikes </title>        
-        <link href="./assets/css/home.css" rel="stylesheet" type="text/css">
-        <script>
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-              
-                ga('create', 'UA-103597066-1', 'auto');
-                ga('send', 'pageview');
-              
-        </script>
-    </head>
-    <body>
-        {{$data := .}}
-        <div>
-            <center><h1 class="page-text"> <i>Spearship</i> Strikes </h1></center>            
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Spearship Strikes</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/button.css" type="text/css" />
+    
+
+    <script async type="text/javascript" src="./assets/js/jquery.js"></script>
+    <script async type="text/javascript" src="./assets/js/sticky.min.js"></script>
+    <script async type="text/javascript" src="./assets/js/custom.js"></script>
+
+    <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          
+            ga('create', 'UA-103597066-1', 'auto');
+            ga('send', 'pageview');
+          
+    </script>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+    <header>
+        <div class="width">
+            <h1><a href="#">Spearship<strong>  Strikes</strong></a></h1>
+            <h2>Welcome to the Game</h2> 
+            <button class="btn"><a href="/game" target="_blank">Play Now!</a></button>
         </div>
-        <center>
-                <div>
-                        <p class="page-text"> In the dusk of World War II, Adolf Hitler committed suicide and his tyranny came to an end.... 
-                            or so we believed but he had only been preparing for the future. One of his secret stealth fighter was caught up in bermuda 
-                            triangle and that was when they arrived. "Klaidus", an alien race with powerful space-ships. </p>                                           
-                </div>            
-                <div>
-                    <p class="page-text"> And now they've emerged from shadows attacking our planet, digging for elixir, hell bent on it's destruction. 
-                        And only YOU can stop them! Ready your turrets and immerse yourself in this RTS game. Download links below For 
-                        web version <a href="/game"> go over there </a></p>
-                </div>
-        </center>
-        <div>
-            <center> <img src="./assets/css/img/ship.png" class="medium-size"> </center>
-        </div>
-        <div>
-            <center>
-                <div>                    
-                    <a href="{{$data.Windows}}"/><img src="./assets/css/img/win.png" class="size-icon"></a>                                
-                    <a href="{{$data.Linux}}"/><img src="./assets/css/img/linux.png" class="size-icon"></a>                                
-                    <a href="{{$data.MacOS}}"/><img src="./assets/css/img/apple.png" class="size-icon"></a>
-                </div>                                    
-            </center>
-        </div>
-    </body>
+    </header>
+    
+    <div class="intro">        
+        <div class="width"></div>
+        <br><br><br><br><br><br><br><br><br>
+    </div>
+    
+<section id="body">
+        <section id="content" class="column-right">
+            <article>
+                <h2>The Story so far</h2>
+                <p>In the dusk of World War II, Adolf Hitler committed suicide and his tyranny came to an end.... 
+                    or so we believed but he had only been preparing for the future. One of his secret stealth fighter was caught up 
+                    in bermuda triangle and that was when they arrived. "Klaidus", an alien race with powerful space-ships. </p>
+
+                <p>And now they've emerged from shadows attacking our planet, digging for elixir, hell bent on it's destruction. 
+                    And only YOU can stop them! Ready your turrets and immerse yourself in this RTS game. </p>                                
+                    
+            </article>
+            <footer>
+        <div class="clear"></div>
+            <div class="footer-bottom">                                            
+                <p>&copy; incognito 2017. </p>
+            </div>
+        </footer>
+</body>
 </html>

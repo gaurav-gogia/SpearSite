@@ -1,0 +1,69 @@
+<!doctype html>
+<html ⚡>
+ <head>
+   <title>SpearShip Strikes</title>   
+   <meta charset="utf-8">
+   <link rel="canonical" href="hello-world.html">
+   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>   
+   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+   <script async src="https://cdn.ampproject.org/v0.js"></script>          
+ </head>
+ <body>         
+    <amp-analytics type="googleanalytics">
+            <script type="application/json">
+                {
+                  "vars": {
+                    "account": "UA-103597066-1"
+                  },
+                  "triggers": {
+                    "outboundLinks": {
+                        "on": "click",
+                        "selector": "a",
+                        "request": "event",
+                        "vars": {
+                          "eventCategory": "outbound",
+                          "eventAction": "click",
+                          "eventLabel": "${outboundLink}"
+                        }
+                      }
+                  }
+                }
+            </script>                                      
+    </amp-analytics>          
+    <header>
+        <div class="width">
+            <h1><a href="#">Spearship<strong>  Strikes</strong></a></h1>
+            <h2>Welcome to the Game</h2> 
+            <a href="/game" target="_blank"><button class="btn">Play Now!</button></a>           
+        </div>
+    </header>
+    <center><amp-img class="intro width" src="./assets/img.jpg" width="800" height="400" layout="responsive"/> </center>
+        
+    <section id="body">
+        <section id="content" class="column-right">                        
+            <h2>The Story so far</h2>
+                <p>In the dusk of <b class="boldText">World War II</b>, Adolf Hitler committed suicide and his tyranny came to an end.... 
+                or so we believed but he had only been preparing for the future. One of his secret stealth fighter was caught up 
+                in bermuda triangle and that was when they arrived. <b class="boldText">"Klaidus"</b>, an alien race with powerful space-ships. </p>
+    
+            <p>And now they've emerged from shadows attacking our planet, digging for elixir, hell bent on it's destruction. 
+                And only <b class="boldText">YOU</b> can stop them! Ready your turrets and immerse yourself in this RTS game. </p>    
+        </section>
+    <footer>
+        <div class="clear"><br/><br/>
+            <center> Download for FREE: </center>                
+        </div>
+        <center>
+            <a href="{{.Windows}}" target="_blank"><button class="btn">Windows</button></a>      
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+            <a href="{{.Linux}}" target="_blank"><button class="btn orange">Linux</button></a>           
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+            <a href="{{.MacOS}}" target="_blank"><button class="btn red">OS X</button></a>        
+        </center>   
+        <div class="footer-bottom"> <p>&copy; incognito 2017. </p></div>
+    </footer>
+ </body> 
+</html>

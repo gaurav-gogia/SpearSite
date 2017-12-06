@@ -1,6 +1,7 @@
 package spear
 
 import (
+	"fmt"
 	"html/template"
 	"log"
 	"net/http"
@@ -30,7 +31,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	games.Windows = "https://drive.google.com/open?id=1XqZt6T4thsDgZ0Pil7gfMem0iYYHby_4"
 	games.Linux = "https://drive.google.com/open?id=1atPZq4m7w8jfOK15zUxG816AKa50mmdB"
 	games.MacOS = "https://drive.google.com/open?id=1i93p55Dh_fRTBeUf-IQzJwzR-ZjTWUGu"
-	err := tpl.ExecuteTemplate(w, "index.html", games)
+	err := tpl.ExecuteTemplate(w, "home.html", games)
 	if err != nil {
 		log.Println(err)
 	}
@@ -45,4 +46,11 @@ func game(w http.ResponseWriter, r *http.Request) {
 	}
 
 	log.Println(r.URL.Path)
+}
+
+func errorHandler(w http.ResponseWriter, r *http.Request, status int) {
+	w.WriteHeader(status)
+	if status == http.StatusNotFound {
+		fmt.Fprint(w, "404")
+	}
 }

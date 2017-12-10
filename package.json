@@ -1,0 +1,6 @@
+standard-library{
+  "formt":"fmt",
+  "template-engine": "html/template",
+  "logging":"log",
+  "networking":"net/http"
+}
